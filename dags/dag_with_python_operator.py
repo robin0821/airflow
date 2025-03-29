@@ -57,4 +57,4 @@ with DAG(
         python_callable=get_age
     )
 
-    task3 >> task4 >> task1 >> task2
+    [task3, task4] >> task1 >> task2
